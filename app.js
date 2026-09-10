@@ -308,7 +308,31 @@ const systems={
     ]
   }
 };
-const icons={"Compras": "🛒", "Almacenes": "📦", "Ventas": "📊", "Contabilidad": "📒", "Caja": "💵", "Costos": "🧮", "Gerencia": "📈"};
+// Cocina vuelve a utilizar su estructura original del menú.
+systems["Cocina"] = {
+  "Operaciones": [
+    "Cola de comandas",
+    "Preparación de pedidos",
+    "Control de calidad",
+    "Despacho de comandas"
+  ],
+  "Monitoreo": [
+    "Pedidos recibidos",
+    "Pedidos en preparación",
+    "Pedidos listos",
+    "Pedidos retrasados"
+  ],
+  "Reportes": [
+    "Tiempo de preparación",
+    "Comandas por hora",
+    "Pedidos despachados",
+    "Incidencias de cocina"
+  ]
+};
+// Estos módulos se retiran del selector según la configuración solicitada.
+delete systems["Contabilidad"];
+delete systems["Costos"];
+const icons={"Compras": "🛒", "Almacenes": "📦", "Ventas": "📊", "Caja": "💵", "Gerencia": "📈", "Cocina": "🍳"};
 const login=document.getElementById('loginView'),mods=document.getElementById('modulesView'),erp=document.getElementById('erpView');
 function view(v){[login,mods,erp].forEach(x=>x.classList.add('hidden'));v.classList.remove('hidden')}
 loginBtn.onclick=()=>{if(!loginUser.value||!loginPass.value)return alert('Ingrese usuario y contraseña');view(mods)};
