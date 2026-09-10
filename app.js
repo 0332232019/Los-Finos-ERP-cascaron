@@ -361,19 +361,19 @@ document.addEventListener('click', e => {
             heroSection.classList.add('hidden');
             if(vistaAlmacen) vistaAlmacen.classList.add('hidden');
             if(vistaVentas) vistaVentas.classList.remove('hidden');
-        } else if (accion === 'Almacen' || accion === 'Gestión de Inventario' || accion === 'Actualizacion de inventario') {
-            cardsGenerales.classList.add('hidden');
-            heroSection.classList.add('hidden');
-            if(vistaVentas) vistaVentas.classList.add('hidden');
-            if(vistaAlmacen) vistaAlmacen.classList.remove('hidden');
-        } else {
-            cardsGenerales.classList.remove('hidden');
-            heroSection.classList.remove('hidden');
-            if(vistaVentas) vistaVentas.classList.add('hidden');
-            if(vistaAlmacen) vistaAlmacen.classList.add('hidden');
+
         }
-    }
-});
+        } else if (accion === 'Gestión de Inventario' || accion === 'Actualizacion de inventario') {
+    cardsGenerales.classList.add('hidden');
+    heroSection.classList.add('hidden');
+    if(vistaVentas) vistaVentas.classList.add('hidden');
+    if(vistaAlmacen) vistaAlmacen.classList.remove('hidden');
+} else {
+    cardsGenerales.classList.remove('hidden');
+    heroSection.classList.remove('hidden');
+    if(vistaVentas) vistaVentas.classList.add('hidden');
+    if(vistaAlmacen) vistaAlmacen.classList.add('hidden');
+}
 document.querySelector('.search button').onclick=()=>show('Búsqueda global: '+globalSearch.value); quickBtn.onclick=()=>show('Búsqueda rápida: '+quickSearch.value);
 // Lógica de registro para la vista de Almacén
 document.addEventListener('DOMContentLoaded', () => {
