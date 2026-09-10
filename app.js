@@ -380,28 +380,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnGuardarAlmacen = document.querySelector('#almacenDashboard .btn-accion');
     if (btnGuardarAlmacen) {
         btnGuardarAlmacen.addEventListener('click', () => {
-            const nombre = document.getElementById('nombreInsumo').value;
+            const almacen = document.getElementById('tipoAlmacen').value;
+            const movimiento = document.getElementById('tipoMovimiento').value;
+            const insumo = document.getElementById('nombreInsumo').value;
             const cantidad = document.getElementById('cantidadInsumo').value;
-            const unidad = document.getElementById('unidadInsumo').value;
 
-            if (!nombre || !cantidad) {
-                alert('Por favor complete todos los campos');
+            if (!insumo || !cantidad) {
+                alert('Por favor complete el insumo y la cantidad');
                 return;
             }
 
             const tabla = document.getElementById('tablaAlmacen');
             const nuevaFila = document.createElement('tr');
+            
+            // Determina la etiqueta según la cantidad de stock
+            const esBajo = parseFloat(cantidad) <= 5;
+            const estadoBadge = esBajo 
+                ? '<span class="badge warn">⚠️ Alerta de Mínimo</span>'
+                : '<span class="badge" style="background:#28a745; color:white;">Normal</span>';
+
             nuevaFila.innerHTML = `
-                <td>${nombre}</td>
-                <td>${parseFloat(cantidad).toFixed(1)}</td>
-                <td>${unidad}</td>
-                <td><span class="badge" style="background:#28a745; color:white;">Suficiente</span></td>
+                <td>${almacen}</td>
+                <td>${insumo} (${movimiento})</td>
+                <td>${parseFloat(cantidad).toFixed(1)} Kg/Unid</td>
+                <td>${estadoBadge}</td>
             `;
+            
             tabla.appendChild(nuevaFila);
 
+            // Limpiar inputs
             document.getElementById('nombreInsumo').value = '';
             document.getElementById('cantidadInsumo').value = '';
-            show('Insumo registrado correctamente');
+            show('Movimiento de almacén registrado correctamente');
         });
     }
 });
