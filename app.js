@@ -272,235 +272,43 @@ const systems={
       "Tareas"
     ]
   },
-  "Activo Fijo": {
-    "Movimientos": [
-      "Depreciacion Activo Fijo",
-      "Registro Activo Fijo"
+  "Gerencia": {
+    "Resumen Ejecutivo": [
+      "Indicadores clave",
+      "Ventas del período",
+      "Utilidad y margen",
+      "Flujo de caja",
+      "Posición financiera"
     ],
-    "Reportes": [
-      "Activos Fijos Depreciados",
-      "Activos por Ubicacion",
-      "Altas Bajas Activos Fijos",
-      "Depreciacion Mensual",
-      "Etiqueta Para Inventario",
-      "Formato de Inventario",
-      "Listado Activos Fijos"
+    "Análisis y Seguimiento": [
+      "Ventas por canal",
+      "Rentabilidad por producto",
+      "Costos versus ventas",
+      "Cuentas por cobrar y pagar",
+      "Inventario valorizado"
     ],
-    "Tablas": [
-      "Adquisiciones",
-      "Catalogo Compra Activo",
-      "Grupo Activo Fijo",
-      "Status",
-      "SubGrupo Activo Fijo",
-      "Tipo Activo"
+    "Planeamiento y Presupuesto": [
+      "Presupuesto anual",
+      "Presupuesto por centro de costo",
+      "Proyección de ingresos y gastos",
+      "Metas comerciales"
+    ],
+    "Aprobaciones": [
+      "Compras pendientes",
+      "Pagos pendientes",
+      "Solicitudes de caja",
+      "Movimientos extraordinarios"
+    ],
+    "Reportes Gerenciales": [
+      "Estado de resultados",
+      "Balance general",
+      "Flujo de efectivo",
+      "Dashboard gerencial",
+      "Cierre mensual"
     ]
-  },
-  "Bancos": {
-    "Consultas": [
-      "Estado comprobante"
-    ],
-    "Movimientos": [
-      "Banco",
-      "Bancos - Conciliacion Izipay",
-      "Bancos - Cuenta Bancaria",
-      "Cierre Mensual",
-      "Cobranza Tarjetas",
-      "Conciliacion",
-      "Gestión de Aprobacion",
-      "Pagos - Solicitudes de Pago",
-      "Productos",
-      "Recepcion de Productos",
-      "Registro Productos por orden",
-      "Restricciones",
-      "Tiempo Recepcion"
-    ],
-    "Reportes": [
-      "Cheques Emitidos",
-      "Conciliacion",
-      "Documentos por pagar",
-      "Facturas Registradas",
-      "Impresion Movimiento",
-      "Letras Cambio",
-      "Libro Banco",
-      "Notas Credito",
-      "Reportes",
-      "Resumen bancos",
-      "Saldo posicion bancos"
-    ],
-    "Tablas": [
-      "Concepto Caja",
-      "Cuentas Bancarias"
-    ]
-  },
-  "Cuentas por Pagar": {
-    "Consultas": [
-      "Estado de Letras",
-      "Estado de comprobantes",
-      "Facturacion de Proveedores",
-      "Historial de saldos"
-    ],
-    "Movimientos": [
-      "Pagos - Aprobacion de Pago",
-      "Pagos - Letras",
-      "Pagos - Propuesta de Pago",
-      "Pagos - Registrar Haberes",
-      "Registro de Letras"
-    ],
-    "Reportes": [
-      "Comprobantes por Vencer",
-      "Cuentas a Proveedores",
-      "Documentos por Canje",
-      "Movimiento de Comprobantes",
-      "Resumen de Letras",
-      "Resumen de Proveedores"
-    ],
-    "Tablas": [
-      "Entidad Financiera",
-      "Estado Documento",
-      "Tipo Comprobante",
-      "Tipo Moneda"
-    ]
-  },
-  "Control de Asistencia": {
-    "Consultas": [
-      "Asistencia por Trabajador"
-    ],
-    "Movimientos": [
-      "Asignar Horario",
-      "Asignar Terminales",
-      "Gestión de Programación Día/Hora",
-      "Gestión de Programación Mensual/Día",
-      "Orden de Trabajo",
-      "Permisos Laborales",
-      "Procesar Asistencia",
-      "Programa Laboral",
-      "Programación Mensual",
-      "Registro por Marcas"
-    ],
-    "Reportes": [
-      "Asistencia Diaria",
-      "Asistencia por Trabajador",
-      "Control de Asistencia",
-      "Horas Programadas Vs Ejecutadas"
-    ],
-    "Tablas": [
-      "Alcance Salida Laboral",
-      "Gestión de Horarios",
-      "Gestión de Turnos",
-      "Horario Laboral",
-      "Motivo Salida Laboral",
-      "Puntos de Control",
-      "Terminal Punto Control"
-    ]
-  },
-  "Planilla": {
-    "Asistencia": [
-      "Partes de Apuntacion"
-    ],
-    "Consultas": [
-      "Record de Asistencia"
-    ],
-    "Contratacion": [
-      "Contrato Laboral",
-      "Legajo del Personal",
-      "Periodo Laboral - 4ta Categoria",
-      "Registro de Trabajadores"
-    ],
-    "Movimientos": [
-      "Adelanto Sueldo",
-      "Adelantos de Participacion",
-      "Archivos de PDT",
-      "Asiento Contable de Planilla",
-      "Asiento de Cancelacion de Planilla",
-      "Comisión por AFP",
-      "Descanso Vacacional",
-      "Distribucion de Participacion",
-      "Distribución de Costos",
-      "Exportaciones a Excel",
-      "Montos Fijos",
-      "Montos Variables",
-      "Prestamo Personal",
-      "Programa Vacacional",
-      "Remuneración del Trabajador",
-      "T-Registro y PLAME",
-      "Tasa Regimen Pension"
-    ],
-    "Reportes": [
-      "Adelanto Quincenal",
-      "Boletas de Remuneraciones",
-      "Carta Reparto Utilidad",
-      "Certificado 5° Categoria",
-      "Conceptos Tributarios",
-      "Inconsistencia de Costos",
-      "Liquidacion de utilidades",
-      "Padron de Trabajadores",
-      "Participacion en utilidades",
-      "Periodos Vacacionales",
-      "Planilla Neta",
-      "Relacion de Trabajadores",
-      "Reportes",
-      "Resumen Essalud",
-      "Resumen de AFP",
-      "Resumen por Conceptos",
-      "Vacaciones Pendientes Anual"
-    ],
-    "Tablas": [
-      "APORTE EMPLEADOR",
-      "Asignar Concepto",
-      "CONCEPTOS AFECTOS",
-      "Cargos Funcionales",
-      "Categorias",
-      "Cese Laboral",
-      "Conceptos Planilla",
-      "Conceptos Sunat",
-      "Cta Bco y Costos",
-      "Cuenta Contable",
-      "Dias no laborables",
-      "Estado Civil",
-      "Estado del Trabajador",
-      "Generador de Costos",
-      "Gestión de Tablas Maestras",
-      "Grado de Instrucción",
-      "Nacionalidad",
-      "Ocupacion",
-      "Prestador de Salud",
-      "Regimen de Pensión",
-      "Sexo",
-      "Tipo Comisión AFP",
-      "Tipo Concepto Planilla",
-      "Tipo Concepto Sunat",
-      "Tipo Contrato Laboral",
-      "Tipo Documento Identidad",
-      "Tipo Suspensión Laboral",
-      "Tipo de Pago",
-      "Tipo de Planilla",
-      "Tipo de Trabajador"
-    ]
-  },
-  "Cocina": {
-    "Operaciones": [
-        "Cola de comandas",
-        "Preparación de pedidos",
-        "Control de calidad",
-        "Despacho de comandas"
-    ],
-
-    "Monitoreo": [
-        "Pedidos recibidos",
-        "Pedidos en preparación",
-        "Pedidos listos",
-        "Pedidos retrasados"
-    ],
-
-    "Reportes": [
-        "Tiempo de preparación",
-        "Comandas por hora",
-        "Pedidos despachados",
-        "Incidencias de cocina"
-    ]
-}
+  }
 };
-const icons={"Compras": "🛒", "Almacenes": "📦", "Ventas": "📊", "Contabilidad": "📒", "Caja": "💵", "Costos": "🧮", "Activo Fijo": "🏢", "Bancos": "🏦", "Cuentas por Pagar": "🧾", "Control de Asistencia": "🕘", "Planilla": "👥", "Clínica": "⚕️"};
+const icons={"Compras": "🛒", "Almacenes": "📦", "Ventas": "📊", "Contabilidad": "📒", "Caja": "💵", "Costos": "🧮", "Gerencia": "📈"};
 const login=document.getElementById('loginView'),mods=document.getElementById('modulesView'),erp=document.getElementById('erpView');
 function view(v){[login,mods,erp].forEach(x=>x.classList.add('hidden'));v.classList.remove('hidden')}
 loginBtn.onclick=()=>{if(!loginUser.value||!loginPass.value)return alert('Ingrese usuario y contraseña');view(mods)};
