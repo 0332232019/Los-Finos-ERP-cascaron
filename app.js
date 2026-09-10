@@ -21,59 +21,37 @@ const systems={
   ]
 },
   "Almacenes": {
-    "Catalogo": [
-      "Clase Almacen",
-      "Grupo Almacen",
-      "Item Almacen"
+    "Movimientos": [
+      "Recepción de Insumos",
+      "Salida a Cocina",
+      "Registro de Mermas y Descarte",
+      "Ajuste Físico de Inventario"
     ],
-    "Ingresos": [
-      "Almacenamiento",
-      "Parte de Ingreso",
-      "Recepcion Picking"
+    "Consultas": [
+      "Stock Almacén Seco",
+      "Stock Cámara de Frío",
+      "Kardex Valorizado",
+      "Lotes y Vencimientos"
     ],
-    "Inventario": [
-      "Actualizacion de inventario",
-      "Ajuste Inventario",
-      "Almacen",
-      "Consulta Kardex",
-      "Consultar Stocks",
-      "Ejecucion de Inventario",
-      "Gestión de Inventario",
-      "Importar Inventario Fisico",
-      "Inventario Fisico",
-      "Inventario por Grupo",
-      "Saldos Iniciales"
+    "Recetas (BOM)": [
+      "Fichas Técnicas de Platos",
+      "Descuento Automático por Comanda",
+      "Costeo Estándar de Recetas"
     ],
     "Procesos": [
-      "Gestion Almacenes",
-      "Gestion Aplic. Fracción",
-      "Gestion de sublotes",
-      "Migrar Ingresos Lolfar",
-      "Proceso de importacion Kardex",
-      "Restricciones",
-      "Valorizar Kardex Lolfar"
+      "Toma de Inventario Físico",
+      "Reconciliación Teórico vs Real",
+      "Generar Requerimiento a Compras"
     ],
-    "Reportes": [
-      "Catalogo Materiales",
-      "Formato Toma Inventario",
-      "KARDEX",
-      "Listado Ingresos",
-      "Listado Salidas",
-      "Reporte - Etiquetas de Embalaje",
-      "Reporte - Faltante excedente",
-      "Reporte - Formatos Logisticos",
-      "Reporte - Picking - Bultos",
-      "Reporte - Tiempo Picking",
-      "Reposicion Por Stock Minimo",
-      "Saldos Almacen",
-      "Stock Materiales"
+    "Alertas": [
+      "Insumos Bajo Stock Mínimo",
+      "Caducidad y Ruptura de Frío",
+      "Control de Rotación PEPS"
     ],
-    "Salidas": [
-      "Crear Pedido Distribucion",
-      "Distribución",
-      "Lista de Picking",
-      "Parte de Salida",
-      "Sincroni. Picking - mov"
+    "Tablas": [
+      "Catálogo Maestro de Insumos",
+      "Unidades de Medida",
+      "Zonas y Cámaras de Almacenamiento"
     ]
   },
   "Ventas": {
